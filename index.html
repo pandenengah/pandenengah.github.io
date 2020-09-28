@@ -19,8 +19,78 @@
 	<link href="assets/css/font-awesome.css" rel="stylesheet" />
 	<link href="assets/css/google-roboto-300-700.css" rel="stylesheet" />
 
-	<!-- googleadsense -->
-	<script data-ad-client="ca-pub-9439152787946031" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<style>
+		.nav-center .nav.nav-pills li{
+			width: 116px;
+			border-bottom: 3px solid #e5e5e5;
+			margin: 0;
+			
+		}
+		@media (max-width: 492px) {
+			.nav-center .nav-pills-icons {
+				max-width: none;
+				padding-left: calc((100vw - (116px * 2) - 30px) / 2);
+			}
+		}
+		@media only screen and (min-width: 493px) {
+			.nav-center .nav-pills-icons {
+				max-width: none;
+				padding-left: calc((100vw - (116px * 3) - 30px) / 2);
+			}
+		}
+		@media only screen and (min-width: 610px) {
+			.nav-center .nav-pills-icons {
+				max-width: none;
+				padding-left: calc((100vw - (116px * 4) - 30px) / 2);
+			}
+		}
+		@media only screen and (min-width: 726px) {
+			.nav-center .nav-pills-icons {
+				max-width: none;
+				padding-left: calc((100vw - (116px * 5) - 30px) / 2);
+			}
+		}
+		@media only screen and (min-width: 842px) {
+			.nav-center .nav-pills-icons {
+				max-width: none;
+				padding-left: 0;
+			}
+		}
+		@media only screen and (min-width: 992px) {
+			.nav-center .nav-pills-icons {
+				max-width: none;
+				padding-left: calc((58.33vw - (116px * 4) - 30px) / 2);
+			}
+		}
+		@media only screen and (min-width: 1245px) {
+			.nav-center .nav-pills-icons {
+				max-width: none;
+				padding-left: calc((58.33vw - (116px * 5) - 30px) / 2);
+			}
+		}
+		@media only screen and (min-width: 1444px) {
+			.nav-center .nav-pills-icons {
+				max-width: none;
+				padding-left: 0;
+			}
+		}
+
+		.my-grid {
+			display: grid;
+			grid-template-columns: 1fr;
+			gap: 15px;
+		}
+		@media only screen and (min-width: 610px) {
+			.my-grid {
+				grid-template-columns: 1fr 1fr;
+			}
+		}
+		@media only screen and (min-width: 2560px) {
+			.my-grid {
+				grid-template-columns: 1fr 1fr 1fr;
+			}
+		}
+	</style>
 </head>
 
 <body>
@@ -115,11 +185,11 @@
 											</div>
 											<div class="timeline-panel">
 												<div class="timeline-heading">
-													<span class="label label-info">Present</span>
+													<span class="label label-info">2018 - Present</span>
 												</div>	
-												<h6>Full Stack Developer</h6>
+												<h6>Web Full Stack Developer</h6>
 												<div class="timeline-body">
-													<p>Create and developing "Si-Marti" web apps</p>
+													<p>Create web apps based on their need to fulfill all the process (ERP) for contractor manufacture, and shops sub company. Maintenance all the web apps</p>
 												</div>
 												<h6><small><span class="fa fa-home"></span> PT Tiara Cipta Nirwana</small></h6>
 											</div>
@@ -132,7 +202,7 @@
 												<div class="timeline-heading">
 													<span class="label label-info">2017</span>
 												</div>
-												<h6>Intership</h6>
+												<h6>Mobile Android Front-End Developer - Intership</h6>
 												<div class="timeline-body">
 													<p>Create “Si-Cuti” mobile apps integrated with web service and help maintenance in Bali Zoo with IT Support</p>
 												</div>
@@ -149,17 +219,18 @@
 										</div>
 									</div>
 									<div class="row">
-										<div class="col-md-6">
-											<span w3-include-html="include\si-marti.html"></span>
-											<span w3-include-html="include\si-cuti.html"></span>
-											<span w3-include-html="include\sips-konveksi.html"></span>
-											<span w3-include-html="include\tr-bank.html"></span>
-
-										</div>
-										<div class="col-md-6">
-											<span w3-include-html="include\i-gerantang.html"></span>
-											<span w3-include-html="include\kerobokan.html"></span>
-											<span w3-include-html="include\apzet.html"></span>
+										<div class="col-md-12 my-grid">
+											<span include-html="include\hanyawarta.html"></span>
+											<span include-html="include\si-nck.html"></span>
+											<span include-html="include\si-dbe.html"></span>
+											<span include-html="include\si-tikon.html"></span>
+											<span include-html="include\si-marti.html"></span>
+											<span include-html="include\i-gerantang.html"></span>
+											<span include-html="include\si-cuti.html"></span>
+											<span include-html="include\kerobokan.html"></span>
+											<span include-html="include\sips-konveksi.html"></span>
+											<span include-html="include\apzet.html"></span>
+											<span include-html="include\tr-bank.html"></span>
 										</div>
 									</div>
 								</div>
@@ -170,14 +241,16 @@
 											<table>
 												<tr>
 													<td style="text-align: center">
-														<img src="assets\img\skill\php.png" style="width: 140px; padding: 10px">
 														<img src="assets\img\skill\html5.png" style="width: 100px; padding: 10px">
 														<img src="assets\img\skill\css.png" style="width: 100px; padding: 10px">
 														<img src="assets\img\skill\js.png" style="width: 100px; padding: 10px">
-														<img src="assets\img\skill\jquery.png" style="width: 120px; padding: 10px">
+														<img src="assets\img\skill\php.png" style="width: 140px; padding: 10px">
 														<img src="assets\img\skill\ci.png" style="width: 130px; padding: 10px">
+														<img src="assets\img\skill\sql.png" style="width: 170px; padding: 10px">
+														<img src="assets\img\skill\laravel.png" style="width: 170px; padding: 10px">
+														<img src="assets\img\skill\vue.png" style="width: 170px; padding: 10px">
+														<img src="assets\img\skill\jquery.png" style="width: 120px; padding: 10px">
 														<img src="assets\img\skill\wp.png" style="width: 120px; padding: 10px">
-														<img src="assets\img\skill\mysql.png" style="width: 170px; padding: 10px">
 														<img src="assets\img\skill\as.png" style="width: 210px; padding: 10px">
 														<img src="assets\img\skill\java.png" style="width: 100px; padding: 10px">
 														<img src="assets\img\skill\unity.png" style="width: 180px; padding: 10px">
@@ -185,6 +258,7 @@
 														<img src="assets\img\skill\cpp.png" style="width: 110px; padding: 10px">
 														<img src="assets\img\skill\python.png" style="width: 250px; padding: 10px">
 														<img src="assets\img\skill\ps.png" style="width: 110px; padding: 10px">
+														<img src="assets\img\skill\node.png" style="width: 170px; padding: 10px">
 													</td>
 												</tr>
 											</table>
@@ -235,6 +309,96 @@
 											</div>
 											<div class="timeline-panel">
 												<div class="timeline-heading">
+													<span class="label label-info">2020</span>
+												</div>	
+												<h6>"Menjadi Front-End Web Developer Expert" Online Class</h6>
+												<div class="timeline-body">
+													<p>On Going</p>
+												</div>
+												<h6><small><span class="fa fa-home"></span> Dicoding Indonesia - Informal</small></h6>
+											</div>
+										</li>
+										<li class="timeline-inverted">
+											<div class="timeline-badge info">
+												<i class="material-icons">home</i>
+											</div>
+											<div class="timeline-panel">
+												<div class="timeline-heading">
+													<span class="label label-info">2020</span>
+												</div>	
+												<h6>"Membangun Progressive Web Apps" Online Class</h6>
+												<div class="timeline-body">
+													<p>Passed</p>
+												</div>
+												<h6><small><span class="fa fa-home"></span> Dicoding Indonesia - Informal</small></h6>
+											</div>
+										</li>
+										<li class="timeline-inverted">
+											<div class="timeline-badge info">
+												<i class="material-icons">home</i>
+											</div>
+											<div class="timeline-panel">
+												<div class="timeline-heading">
+													<span class="label label-info">2020</span>
+												</div>	
+												<h6>"Belajar Fundamental Front-End Web Development" Online Class</h6>
+												<div class="timeline-body">
+													<p>Passed</p>
+												</div>
+												<h6><small><span class="fa fa-home"></span> Dicoding Indonesia - Informal</small></h6>
+											</div>
+										</li>
+										<li class="timeline-inverted">
+											<div class="timeline-badge info">
+												<i class="material-icons">home</i>
+											</div>
+											<div class="timeline-panel">
+												<div class="timeline-heading">
+													<span class="label label-info">2020</span>
+												</div>	
+												<h6>"Belajar Dasar Pemrograman Web" Online Class</h6>
+												<div class="timeline-body">
+													<p>Passed</p>
+												</div>
+												<h6><small><span class="fa fa-home"></span> Dicoding Indonesia - Informal</small></h6>
+											</div>
+										</li>
+										<li class="timeline-inverted">
+											<div class="timeline-badge info">
+												<i class="material-icons">home</i>
+											</div>
+											<div class="timeline-panel">
+												<div class="timeline-heading">
+													<span class="label label-info">2019</span>
+												</div>	
+												<h6>"Belajar Membuat Aplikasi Android untuk Pemula" Online Class</h6>
+												<div class="timeline-body">
+													<p>Passed</p>
+												</div>
+												<h6><small><span class="fa fa-home"></span> Dicoding Indonesia - Informal</small></h6>
+											</div>
+										</li>
+										<li class="timeline-inverted">
+											<div class="timeline-badge info">
+												<i class="material-icons">home</i>
+											</div>
+											<div class="timeline-panel">
+												<div class="timeline-heading">
+													<span class="label label-info">2019</span>
+												</div>	
+												<h6>"Memulai Pemrograman Dengan Kotlin" Online Class</h6>
+												<div class="timeline-body">
+													<p>Passed</p>
+												</div>
+												<h6><small><span class="fa fa-home"></span> Dicoding Indonesia - Informal</small></h6>
+											</div>
+										</li>
+										<li class="timeline-inverted">
+											<div class="timeline-badge info">
+												<i class="material-icons">home</i>
+											</div>
+											<div class="timeline-panel">
+												<div class="timeline-heading">
 													<span class="label label-info">2014 - 2018</span>
 												</div>	
 												<h6>Bachelor of Information Technology
@@ -242,7 +406,7 @@
 												<div class="timeline-body">
 													<p>Graduated with a cumulative GPA of 3.83</p>
 												</div>
-												<h6><small><span class="fa fa-home"></span> Udayana University</small></h6>
+												<h6><small><span class="fa fa-home"></span> Udayana University - Formal</small></h6>
 											</div>
 										</li>
 										<li class="timeline-inverted">
@@ -259,7 +423,7 @@
 												<div class="timeline-body">
 													<p>Graduated with national examination grade of 8.7</p>
 												</div>
-												<h6><small><span class="fa fa-home"></span> SMAN Bali Mandara</small></h6>
+												<h6><small><span class="fa fa-home"></span> SMAN Bali Mandara - Formal</small></h6>
 											</div>
 										</li>	
 									</ul>
@@ -353,13 +517,13 @@
 
 <script>
 	function includeHTML() {
-		var z, i, elmnt, file, xhttp;
+		let z, i, elmnt, file, xhttp;
 		/*loop through a collection of all HTML elements:*/
 		z = document.getElementsByTagName("*");
 		for (i = 0; i < z.length; i++) {
 			elmnt = z[i];
 			/*search for elements with a certain atrribute:*/
-			file = elmnt.getAttribute("w3-include-html");
+			file = elmnt.getAttribute("include-html");
 			if (file) {
 				/*make an HTTP request using the attribute value as the file name:*/
 				xhttp = new XMLHttpRequest();
@@ -368,7 +532,7 @@
 						if (this.status == 200) {elmnt.innerHTML = this.responseText;}
 						if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
 						/*remove the attribute, and call this function once more:*/
-						elmnt.removeAttribute("w3-include-html");
+						elmnt.removeAttribute("include-html");
 						includeHTML();
 					}
 				} 
